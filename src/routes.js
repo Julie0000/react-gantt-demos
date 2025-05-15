@@ -31,77 +31,63 @@ import GanttCustomSort from "./cases/GanttCustomSort.jsx";
 import GanttSummariesProgress from "./cases/GanttSummariesProgress.jsx";
 import GanttSummariesNoDrag from "./cases/GanttSummariesNoDrag.jsx";
 import GanttSummariesConvert from "./cases/GanttSummariesConvert.jsx";
+import GanttMachine from "./cases/GanttMachine.jsx";
 
 export const links = [
-	["/base/:skin", "Basic Gantt", BasicInit],
+  ["/machine/:skin", "Gantt Machine 測試中~~", GanttMachine],
 
-	["/sizes/:skin", "Scale / cell sizes", GanttSizes],
-	["/cell-borders/:skin", "Chart cell borders", ChartCellBorders],
-	["/scales/:skin", "Custom scales", GanttScales],
+  ["/base/:skin", "Basic Gantt", BasicInit],
 
-	
-	["/baseline/:skin", "Baselines", GanttBaseline],
-	["/templates/:skin", "Custom text", GanttText],
+  ["/sizes/:skin", "Scale / cell sizes", GanttSizes],
+  ["/cell-borders/:skin", "Chart cell borders", ChartCellBorders],
+  ["/scales/:skin", "Custom scales", GanttScales],
 
-	["/task-types/:skin", "Task types", GanttTaskTypes],
-	[
-		"/summary-progress/:skin",
-		"Summary tasks with auto progress",
-		GanttSummariesProgress,
-	],
-	[
-		"/summary-no-drag/:skin",
-		"No drag for summary tasks",
-		GanttSummariesNoDrag,
-	],
-	[
-		"/summary-convert/:skin",
-		"Auto convert to summary tasks",
-		GanttSummariesConvert,
-	],
+  ["/baseline/:skin", "Baselines", GanttBaseline],
+  ["/templates/:skin", "Custom text", GanttText],
 
-	["/zoom/:skin", "Zoom", GanttZoom],
-	["/custom-zoom/:skin", "Custom Zoom", GanttCustomZoom],
-	["/length-unit/:skin", "Length unit (rounding)", GanttLengthUnit],
+  ["/task-types/:skin", "Task types", GanttTaskTypes],
+  [
+    "/summary-progress/:skin",
+    "Summary tasks with auto progress",
+    GanttSummariesProgress,
+  ],
+  ["/summary-no-drag/:skin", "No drag for summary tasks", GanttSummariesNoDrag],
+  [
+    "/summary-convert/:skin",
+    "Auto convert to summary tasks",
+    GanttSummariesConvert,
+  ],
 
-	["/no-grid/:skin", "No grid", GanttNoGrid],
-	[
-		"/grid-fill-space-columns/:skin",
-		"Flexible grid columns",
-		GanttFlexColumns,
-	],
-	["/grid-fixed-columns/:skin", "Fixed grid columns", GanttFixedColumns],
-	["/grid-custom-columns/:skin", "Custom grid columns", GanttGrid],
+  ["/zoom/:skin", "Zoom", GanttZoom],
+  ["/custom-zoom/:skin", "Custom Zoom", GanttCustomZoom],
+  ["/length-unit/:skin", "Length unit (rounding)", GanttLengthUnit],
 
-	["/toolbar/:skin", "Toolbar", GanttToolbar],
-	["/toolbar-buttons/:skin", "Toolbar: limited buttons", GanttToolbarButtons],
-	["/context-menu/:skin", "Context menu", ContextMenu],
-	[
-		"/menu-handler/:skin",
-		"Context menu: limiting options",
-		ContextMenuHandler,
-	],
-	["/menu-options/:skin", "Context menu: custom options", ContextMenuOptions],
-	[
-		"/custom-form-controls/:skin",
-		"Editor: custom controls",
-		GanttFormControls,
-	],
+  ["/no-grid/:skin", "No grid", GanttNoGrid],
+  ["/grid-fill-space-columns/:skin", "Flexible grid columns", GanttFlexColumns],
+  ["/grid-fixed-columns/:skin", "Fixed grid columns", GanttFixedColumns],
+  ["/grid-custom-columns/:skin", "Custom grid columns", GanttGrid],
 
-	["/readonly/:skin", "Readonly mode", GanttReadOnly],
+  ["/toolbar/:skin", "Toolbar", GanttToolbar],
+  ["/toolbar-buttons/:skin", "Toolbar: limited buttons", GanttToolbarButtons],
+  ["/context-menu/:skin", "Context menu", ContextMenu],
+  ["/menu-handler/:skin", "Context menu: limiting options", ContextMenuHandler],
+  ["/menu-options/:skin", "Context menu: custom options", ContextMenuOptions],
+  ["/custom-form-controls/:skin", "Editor: custom controls", GanttFormControls],
 
-	["/prevent-actions/:skin", "Preventing actions", GanttPreventActions],
-	["/gantt-multiple/:skin", "Many Gantts per page", GanttMultiple],
-	["/performance/:skin", "Performance", GanttPerformance],
+  ["/readonly/:skin", "Readonly mode", GanttReadOnly],
 
-	["/sorting/:skin", "Custom sorting", GanttSort],
-	["/sorting-api/:skin", "Sort by API", GanttCustomSort],
+  ["/prevent-actions/:skin", "Preventing actions", GanttPreventActions],
+  ["/gantt-multiple/:skin", "Many Gantts per page", GanttMultiple],
+  ["/performance/:skin", "Performance", GanttPerformance],
 
-	["/backend/:skin", "Backend data", GanttBackend],
-	["/backend-provider/:skin", "Saving to backend", GanttProvider],
-	[
-		"/backend-provider-batch/:skin",
-		"Saving to backend (batch)",
-		GanttBatchProvider,
-	],
+  ["/sorting/:skin", "Custom sorting", GanttSort],
+  ["/sorting-api/:skin", "Sort by API", GanttCustomSort],
+
+  ["/backend/:skin", "Backend data", GanttBackend],
+  ["/backend-provider/:skin", "Saving to backend", GanttProvider],
+  [
+    "/backend-provider-batch/:skin",
+    "Saving to backend (batch)",
+    GanttBatchProvider,
+  ],
 ];
